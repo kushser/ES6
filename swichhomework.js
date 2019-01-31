@@ -232,19 +232,19 @@ const timeAdder = (value1, label1, value2, label2) => {
                             break;
                         case label1 === "days" && label2 === "second":
                             value3 = 86400 * value1 + value2;
-                            label3 = label2;
+                            label3 = label2 + "s";
                             time = [value3, label3];
                             console.log(time);
                             break;
                         case label1 === "hours" && label2 === "second":
                             value3 = 3600 * value1 + value2;
-                            label3 = "seconds";
+                            label3 = label2 + "s";
                             time = [value3, label3];
                             console.log(time);
                             break;
                         case label1 === "minutes" && label2 === "second":
                             value3 = 60 * value1 + value2;
-                            label3 = "seconds";
+                            label3 = label2 + "s";
                             time = [value3, label3];
                             console.log(time);
                             break;
