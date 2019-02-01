@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #rectangleWrapper {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+        }
+        .rectangle{
+            width: 150px;
+            height: 100px;
+            color: #000;
+            font-size: 14px;
+            margin: 20px;
+        }
+        #col-f53a10{
+            background-color: #f53a10;
+        }
+        #col-db18ab{
+            background-color: #db18ab;
+        }
+        #col-9830ce {
+            background-color: #9830ce ;
+        }
+        #col-2a1be9 {
+            background-color: #2a1be9;
+        }
+        #col-1d8bf2 {
+            background-color: #1d8bf2;
+        }
+        #col-14cde3 {
+            background-color: #14cde3;
+        }
+        #col-14e37f {
+            background-color: #14e37f ;
+        }
+        #col-2de314 {
+            background-color: #2de314;
+        }
+        #col-eef939 {
+            background-color: #eef939;
+        }
+        #col-f9bc39 {
+           background-color: #f9bc39;
+        }
+        .text{
+            position: relative;
+            left: 0%;
+            top: 100%;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="title">My favorite colors .</h1>
+<h2 class="descr-page">I like these colors very much . I usually use their in my design</h2>
+<div id="rectangleWrapper">
+    <div id="col-f53a10" class="rectangle">
+        <p class="text">#f53a10</p>
+    </div>
+    <div id="col-db18ab" class="rectangle">
+        <p class="text">#db18ab</p>
+    </div>
+    <div id="col-9830ce" class="rectangle">
+        <p class="text">#9830ce</p>
+    </div>
+    <div id="col-2a1be9" class="rectangle">
+        <p class="text">#2a1be9</p>
+    </div>
+    <div id="col-1d8bf2" class="rectangle">
+        <p class="text">#1d8bf2</p>
+    </div>
+    <div id="col-14cde3" class="rectangle">
+        <p class="text">#14cde3</p>
+    </div>
+    <div id="col-14e37f" class="rectangle">
+        <p class="text">#14e37f</p>
+    </div>
+    <div id="col-2de314" class="rectangle">
+        <p class="text">#2de314</p>
+    </div>
+    <div id="col-eef939" class="rectangle">
+        <p class="text">#eef939</p>
+    </div>
+    <div id="col-f9bc39" class="rectangle">
+        <p class="text">#f9bc39</p>
+    </div>
+</div>
+<script>
+    const rectangles = document.querySelectorAll(".rectangle");
+    const title = document.querySelector(".title");
+    const head = document.querySelector("head");
+
+    console.log("Here are the rectangle IDs:");
+    let i = 1 ;
+    for( const  prop  of rectangles){
+        if (i <= rectangles.length) {
+            console.log("rectangle " + i +" id : #" + prop.id);
+            i += 1;
+        }
+    }
+    const newElement = document.createElement("title");
+    newElement.innerText = title.textContent;
+    head.appendChild(newElement);
+</script>
+</body>
+
+</html>
