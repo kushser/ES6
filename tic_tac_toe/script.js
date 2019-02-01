@@ -5,7 +5,7 @@ const popWinO =document.querySelector(".winnerO");
 const popPlay =document.querySelector(".play");
 const btnX = popWinX.querySelector(".winner-btn");
 const btnO = popWinO.querySelector(".winner-btn");
-const btnPlay = popPlay.querySelector(".winner-btn")
+const btnPlay = popPlay.querySelector(".winner-btn");
 const one = document.getElementById("1");
 const two = document.getElementById("2");
 const three = document.getElementById("3");
@@ -138,6 +138,3 @@ function closePopO() {
 btnPlay.addEventListener("click", closePopPlay);
 btnO.addEventListener("click", closePopO);
 btnX.addEventListener("click", closePopX);
-for(let prop of bloks){
-    console.log(prop.innerText);
-}
