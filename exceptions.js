@@ -1,10 +1,11 @@
 function StringExceptionError(value) {
     this.value = value;
     this.message = "must be a string";
-    this.toString = function() {
+    this.toString = function () {
         return this.value + ": " + this.message;
     }
 }
+
 function reverseJsonArray(string) {
     let str;
     let reverseStr;
@@ -12,27 +13,19 @@ function reverseJsonArray(string) {
         if (typeof string === "string") {
             if (string[0] === "[" && string[string.length - 1] === "]") {
                 str = JSON.parse(string);
-                console.log(str);
-                if (Array.isArray(str)) {
-                    str.reverse();
-                    reverseStr = JSON.stringify(str);
-
-                }
+                str.reverse();
+                reverseStr = JSON.stringify(str);
             } else {
 
-                throw "parameter  is not a JSON-stringified version of an array";
+                throw  string + " - parameter  is not a JSON-stringified version of an array";
 
 
             }
-        }
-        else
-        {
+        } else {
             throw new StringExceptionError(string);
         }
-    }
-    catch
-        (e)
-    {
+    } catch
+        (e) {
         if (e instanceof StringExceptionError) {
             console.log("String exception: " + e);
             return false
@@ -49,7 +42,7 @@ function reverseJsonArray(string) {
 
 console.log(reverseJsonArray());
 console.log(reverseJsonArray(true));
-console.log(reverseJsonArray([2,4,6,"dog"]));
+console.log(reverseJsonArray([2, 4, 6, "dog"]));
 console.log(reverseJsonArray('verygood'));
 console.log(reverseJsonArray('[]'));
 console.log(reverseJsonArray('["cat"]'));
