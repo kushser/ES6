@@ -1,0 +1,91 @@
+body{
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+.hidden {
+    display: none;
+}
+#rectangleWrapper {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.rectangle {
+    width: 94px;
+    height: 100px;
+    color: #000;
+    font-size: 48px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#1{
+    order: 1;
+}
+#2{
+    order: 2;
+}
+#3{
+    order: 3;
+}
+#4{
+    order: 4;
+}
+#5{
+    order: 5;
+}
+#6 {
+    order: 6;
+}
+#7{
+    order: 7;
+}
+#8{
+    order: 8;
+}
+#9{
+    order: 9;
+}
+.red {
+    color: red;
+}
+.play {
+    width: 300px;
+    background: #14cde3;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.winner-btn{
+    width: 40%;
+    height: 30px;
+    background-color: red;;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    font-size: 18px;
+
+}
+.winner-btn:hover {
+    background-color: orange;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.winnerO, .winnerX {
+    width: 300px;
+    background: #1d8bf2;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.winner{
+    padding-top: 10px;
+}
